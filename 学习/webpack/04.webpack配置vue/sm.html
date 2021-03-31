@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+package.json中增加build命令，可以通过npm run build去执行webpack
+npm run build会优先寻找本地webpack，找不到再去找全局webpack
+<!--//开发时依赖-->
+npm install webpack@3.6.0 --save -dev
+
+//优先去本地找
+npm run build
+npm run dev
+
+webpack
+npm install webpack@3.6.0
+
+css-loader
+npm install css-loader@2.0.2 --save-dev
+
+style-loader
+npm install style-loader@0.23.1 --save-dev
+
+less-loader
+npm install --save-dev less-loader@4.1.0 less@3.9.0
+
+url-loader
+npm install --save-dev url-loader@1.1.2
+
+es6转换成es5
+npm install --save-dev babel-loader@7.1.5 babel-core@6.26.3 babel-preset-es2015@6.24.1
+
+Vue
+npm install vue@2.5.21 --save
+
+vue加载和编译
+npm install vue-loader@15.4.2 vue-template-compiler@2.5.21 --save-dev
+
+
+打包index.html文件到dist文件夹
+npm install html-webpack-plugin@3.2.0 --save--dev
+
+js压缩的Plugin
+npm install uglifyjs-webpack-plugin@1.1.1 --save-dev
+
+搭建本地服务器
+npm install --save-dev webpack-dev-server@2.9.3
+
+配置文件合并
+npm install webpack-merge@4.1.5
+</body>
+</html>
